@@ -1,0 +1,319 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* language */
+
+.language li {
+    display: none;
+}
+.language li.active {
+    display: block;
+}
+
+h2{
+	font-size: 3vw;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;	
+	text-transform: uppercase;
+	font-weight:bold;
+}
+
+a{
+	font-size: 1.0vw;
+}
+
+
+.circleBase{
+	position:fixed;	
+	z-index:4;
+	justify-content: center;
+	display:inline-block;
+	
+}
+
+#circle1{
+	margin:1.5vw;
+	border-radius: 50%;
+	width: 0.7vw;
+    height: 0.7vw;
+    background: #DDDDDD;	
+}
+#circle2{
+	margin:1.5vw;
+	border-radius: 50%;
+	width: 0.4vw;
+    height: 0.4vw;
+    background: #DDDDDD;	
+}
+#circle3{
+	margin:1.5vw;
+	border-radius: 50%;
+	width: 0.4vw;
+    height: 0.4vw;
+    background: #DDDDDD;	
+}
+#circle4{
+	margin:1.5vw;
+	border-radius: 50%;
+	width: 0.4vw;
+    height: 0.4vw;
+    background: #DDDDDD;	
+}
+#circle5{
+	margin:1.5vw;
+	border-radius: 50%;
+	width: 0.4vw;
+    height: 0.4vw;
+    background: #DDDDDD;	
+}
+#circle6{
+	margin:1.5vw;
+	border-radius: 50%;
+	width: 0.4vw;
+    height: 0.4vw;
+    background: #DDDDDD;	
+}
+#circle7{
+	margin:1.5vw;
+	border-radius: 50%;
+	width: 0.4vw;
+    height: 0.4vw;
+    background: #DDDDDD;	
+}
+
+#pagelayout{
+		
+}
+
+#icons{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	visibility:hidden;
+}
+
+.horizontal{
+	float:right;
+}
+
+.horizontal img {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.2vw;
+    text-decoration: none;
+	height:3.5vw;
+	width:100%;
+}
+
+.row{
+	z-index:0;
+	margin:0;
+	padding:0;
+}
+
+#container {
+	position:fixed;
+ 	right:5%;
+ 	top:10%;
+  	z-index:1;
+	width:1000px;
+	height:720px;
+	overflow:hidden;
+}
+
+#bild {
+	margin:0;
+}
+
+
+#textfield{
+	margin: 20px;
+	color:white;
+	z-index:2;	
+	text-align:right;
+}
+
+#titleandlogo{
+	width: 30vw;	
+}
+
+
+#footer{
+	margin:0;
+	padding:0;
+	z-index:5;
+	position:relative;
+}
+
+#footer a {
+	color:white;
+	text-align:center;	
+}
+
+body {
+    
+}
+
+
+
+
+/* Preloader */
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff; /* change if the mask should have another color then white */
+	opacity:50%;
+    z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+    width:800px;
+    height:800px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image: url(../images/loading_anim.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-400px 0 0 -400px; /* is width and height divided by two */
+}
+
+#arrow {
+	position: fixed;
+  bottom: 3%;
+  left: 50%;
+  margin:1.5vw;
+  margin-right: 5px;
+  width: 0; 
+  height: 0; 
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #f00;
+
+}
+
+/* Product 
+
+.thumbnails{
+	float:left;
+	margin:0.25vw;	
+}
+
+#productname{
+	font-size:1.8vw;
+	font-family:roboto;
+	margin-bottom:0;
+}
+
+#productdescription{
+	font-size:1vw;
+	font-family:roboto;
+}
+
+#availability{
+	display:inline;
+	font-size:1vw;
+	margin-top:50px;
+}
+
+#pricetag{
+	font-size:2vw;
+	color:white;	
+}
+
+#pricetag, #availability, #addcartbutton{
+	
+}
+
+.productcontainer{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:flex-start;
+	height:auto;
+	width:80vw;
+	margin:auto;
+}
+
+.siteheader{
+	height:auto;
+	width:100%;
+	margin:0;
+	padding:2vh;
+	background:white;
+	color:#A0A0A0;
+	
+}
+.imagebox{
+	height:auto;
+	margin:0;
+}
+
+#productpic{
+	width:500px;
+	height:auto;
+	padding:10px;
+	margin-bottom:0;
+}
+
+.productdescription{
+	height:auto;
+	margin:0;
+	padding:20px;
+	flex-grow:2;
+}
+
+.midlevel{
+	display:flex;
+	width:96%;
+	background-color:grey;
+	justify-content:space-around;
+	margin:auto;
+	padding:2vh;
+}
+
+.thumbnails{
+	display:flex;
+	flex-direction:column;
+	height:auto;
+	overflow:hidden;
+	padding:auto;
+	justify-content:space-around;
+	
+}
+
+.thumb_img{
+	padding:0;
+	margin:0;
+	height: auto;
+	width:50px;
+
+}
+
+.mydivider{
+	height:1px;	
+	background:#C7C7C7;
+	width:95%;
+	margin:auto;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+
+.productdetails{
+	height:auto;
+	padding:50px;
+	width:100%;
+	margin:auto;	
+	font-family:roboto;
+	background:white;
+	margin-bottom:50px;
+}
+
+*/
+
