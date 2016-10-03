@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test Video</title>
+<link rel="stylesheet" href="sytle.css">
+<link rel="stylesheet" href="css/flag-icon-css-master/flag-icon.css">
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+</head>
+
+<body>
+
+<div class="navbar">
+	<div class="left logospace"><img class="logospace" src="images/smartness_logo.png" /></div>
+    <ul class="centered navlist">
+    	<li><a href="#">Square-501</a></li>
+        <li><a href="#">Sigma-301</a></li>
+        <li><a href="#">Information</a></li>
+    </ul>
+    <ul class="right navlist">
+    	<li><a href="#"><span class="flag-icon flag-icon-gb flag-icon" style=""></span></a></li>
+        <li><a href="#"><span class="flag-icon flag-icon-de flag-icon" style=""></span></a></li>
+    </ul>
+    
+</div>
+
+<div id="textfield">
+  <div id="titlediv">
+    <h2 id="title">Square-501</h2>
+  	<h5 id="description">Online Connect Dartbard. Realtime. Global fun. AND THIS IS JUST A TEST what is supposed to show a multiline, if something like this exists,s</h5>
+  </div>
+</div>
+  <div class="video_container">
+    <video id="video">
+        <source src="FullHD_anim.mp4" type="video/mp4"/>
+        <source src="FullHD_anim.webm" type="video/webm"/>
+        Your browser does not support the video tag.
+   </video>
+</div>
+
+<!-- <div class="video_container"> 
+    <video id="video" preload autoplay style="display:none">
+        <source src="Alphacomp.mp4" type="video/mp4"/>
+    </video>
+    <canvas width="1280" height="1440" id="buffer" style="background-color:blue;display:none"></canvas>
+    <canvas width="1280" height="720" id="output"></canvas>
+</div> -->
+
+<!-- Pagelayout and AMount of ROws -->
+<div id="pagelayout">
+  <div class="row dark">
+  </div>
+  <div class="row light">
+  </div>
+  <div class="row dark">
+  </div>
+  <div class="row light">
+  </div>
+  <div class="row dark">
+  </div>
+  <div class="row light">
+  </div>
+  <div class="row dark">
+  </div>
+</div>
+
+
+<script>
+
+// Definieren aller Globalen Variablen
+
+//var outputCanvas = document.getElementById("output");
+//var output = outputCanvas.getContext("2d");
+//var bufferCanvas = document.getElementById("buffer");
+//var buffer = bufferCanvas.getContext("2d");
+//var video = document.getElementById("video");
+var sekunden = 14;
+var framerate = 25;
+var frames = sekunden*framerate;
+var breite = $("#video").width();
+var hoehe = $("#video").height();
+var video = document.getElementById("video");
+var row = $(".row");
+
+$(window).resize(function(){
+	
+	$(".video_container").css({
+		"top": $(".navbar").height(),
+		"height": $(window).height() - $(".navbar").height(),
+		"width": $(window).width(),
+		"right": 0
+	});
+	
+	$("#textfield").css({
+		"top": $(window).height()/2 - $(".navbar").height(),
+		"right": $(window).width()/2 + 50,
+		"max-width": $(window).width()/2 - 100
+	});
+	
+	$("#video").css({
+		"width": $(".video_container").width()
+	});
+	
+	
+	$(window).scroll();
+});
+
+
+$(window).scroll(function(event){
+	
+	var pagelength = $(document).height() - $(window).height();
+	var st = $(this).scrollTop(); //count up
+	var speed = Math.round((st / pagelength) * frames);
+	
+	//speed = speed / 25;
+	//video.currentTime = speed;
+	
+//	document.addEventListener("scroll", funktion);
+//	function funktion(){
+//		
+//	  if(st > lastScrollTop){
+//		  DownScroll(); 
+//	  } else {
+//		  UpScroll();
+//	  }
+//	  lastScrollTop = st;
+//	}
+	
+	if(st >= 0 && st < row.height){
+		window.alert("one");
+		//clearInterval(loop_two);
+		
+		var loop_one = setInterval(function(){ loopOne(); }, 1000/framerate);
+	}
+	
+	if(st > row.height && st < row.height*2){
+		console.log("two");
+		clearInterval(loop_one);
+		clearInterval(loop_three);
+		var loop_two = setInterval(function(){ loopTwo(); }, 1000/framerate);
+	}
+	
+	if(st > row.height*2 && st < row.height*3){
+		clearInterval(loop_two);
+		clearInterval(loop_four);
+		var loop_three = setInterval(function(){ loopThree(); }, 1000/framerate);
+	}
+	
+	if(st > row.height*3 && st < row.height*4){
+		clearInterval(loop_three);
+		clearInterval(loop_five);
+		var loop_four = setInterval(function(){ loopFour(); }, 1000/framerate);
+	}
+	
+	if(st > row.height*4 && st < row.height*5){
+		clearInterval(loop_four);
+		clearInterval(loop_six);
+		var loop_five = setInterval(function(){ loopFive(); }, 1000/framerate);
+	}
+	
+	if(st > row.height*5 && st < row.height*6){
+		clearInterval(loop_five);
+		clearInterval(loop_seven);
+		var loop_six = setInterval(function(){ loopSix(); }, 1000/framerate);
+	}
+	
+	if(st > row.height*6 && st < row.height*7){
+		clearInterval(loop_six);
+		var loop_seven = setInterval(function(){ loopSeven(); }, 1000/framerate);
+	}
+	
+	function loopOne(){
+	  if(video.currentTime <= 2){
+		  alert("jo");
+		  video.currentTime = 0;	//Replay Point
+	  }
+	}
+	
+	function loopTwo(){
+	  if(video.currentTime >= 4){
+		  video.currentTime = 3.2;	//Replay Point
+	  }
+	}
+	
+	function loopThree(){
+	  if(video.currentTime >= 6){
+		  video.currentTime = 4.2;	//Replay Point
+	  }
+	}
+	
+	function loopFour(){
+	  if(video.currentTime >= 8){
+		  video.currentTime = 7.2;	//Replay Point
+	  }
+	}
+	
+	function loopFive(){
+	  if(video.currentTime >= 10){
+		  video.currentTime = 9.2;	//Replay Point
+	  }
+	}
+	
+	function loopSix(){
+	  if(video.currentTime >= 12){
+		  video.currentTime = 10.2;	//Replay Point
+	  }
+	}
+	
+	function loopSeven(){
+	  if(video.currentTime >= 14){
+		  video.currentTime = 13.1;	//Replay Point
+	  }
+	}
+	
+	
+
+});
+
+$(document).ready(function(){		
+	$(window).resize();
+	$(window).scroll();
+	
+//	video.oncanplay = function() {
+//    	var loop_one = setInterval(function(){ loopOne(); }, 1000/framerate);
+//	};
+//
+//function loopOne(){
+//	if(video.currentTime < 2){
+//		video.play();	
+//	}
+//	if(video.currentTime > 2){
+//		video.currentTime = 0;	
+//	}
+//	
+//}
+
+});
+	  
+
+
+
+
+</script>
+
+</body>
+</html>
