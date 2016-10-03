@@ -1,0 +1,623 @@
+<!doctype html>
+<html>
+<head>
+<title>Smartness</title>
+<meta charset="utf-8">
+<meta name="Smartness Website" content="website of the company smartness with showcase and features of our products">
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/mystylesheet.css">
+<link rel="stylesheet" href="css/flag-icon-css-master/flag-icon.css">
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script>
+
+	<!-- Preloader -->
+	$(window).load(function() { // makes sure the whole site is loaded
+
+		
+		
+          $('#status').fadeOut(2500); // will first fade out the loading animation
+          $('#preloader').delay(2500).fadeOut('slow'); // will fade out the white DIV that covers the website.
+          $('body').delay(2500).css({'overflow':'visible'});
+     });
+	 
+	 
+
+</script>
+</head>
+
+<body>
+<!-- Preloader -->
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+
+<!-- HEADER --> 
+<!-- Dropdown Structure 1 -->
+<ul id="dropdown1" class="dropdown-content grey darken-3">
+  <li><a href="product_square.html" style="font-size:12px;color:white;">Square-501</a></li>
+  <li><a href="product_sigma.html" style="font-size:12px;color:white;">Sigma-301</a></li>
+</ul>
+
+<!-- Navigation Bar -->
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper grey darken-3"  style=""> <a href="#" class="brand-logo left" style="padding-left:10px;padding-top:3px;margin:0px;"><img src="images/CA1406-032-Smartness Logo-white-email-01.png" alt="Smartness Logo" width="280px"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down" style="hide-on-med-and-down">
+        <li style="max-width:auto;display:block;"><a href="#!" id="eng_lang" style="padding-left:2px;padding-right:2px;"><span class="flag-icon flag-icon-gb flag-icon" style=""></span></a></li>
+        <li style="max-width:auto;display:block;margin-right:10px;"><a href="#!" id="ger_lang" style="padding-left:2px;padding-right:2px;"><span class="flag-icon flag-icon-de flag-icon" style=""></span></a></li>
+      </ul>
+      <ul id="nav-mobile2" class="right hide-on-med-and-down" style="hide-on-med-and-down">
+        <li><a href="index.html">Feature</a></li>
+        <li><a href="news.html">News</a></li>
+        <!-- Dropdown Trigger 1 -->
+        <li><a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="dropdown1">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li>
+          <div class="platzhalter" style=""></div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<!-- END HEADER -->
+
+<div id="arrow" class="animated infinite fadeOutDown"></div>
+<!-- Circles -->
+<ul class="circleBase">
+  <li id="circle1"></li>
+  <li id="circle2"></li>
+  <li id="circle3"></li>
+  <li id="circle4"></li>
+  <li id="circle5"></li>
+  <li id="circle6"></li>
+  <li id="circle7"></li>
+</ul>
+
+<!-- Dartboard --> 
+
+<div id="container"> <img id="bild" src="images/New Sprites/SPritesheet rxc.png" alt="Turntable Dartboard"> </div>
+<!-- <img id="bild" src="images/test/test0.png" alt="Turntable Dartboard"> -->
+
+<!-- Page Layout - 7 Rows, always filled with 12 colummns --> 
+
+<!-- Textfield mit Title and Description -->
+<div id="textfield">
+  <div id="titlediv" style="width:auto;">
+    <h2 id="title" style="float:right;">Square-501</h2>
+    <img id="titlelogo" alt="Guz Board Logo" src="images/guzlogo.png" style="float:right;max-width:250px;height:7em;margin:0;margin-top:-0.70%;margin-right:-15px;"></div>
+  <h5 id="description" style="font-size:1.2vw;float:right;">Online Connect Dartbard. Realtime. Global fun.</h5>
+  <ul id="icons" style="float:right;">
+    <li class="horizontal"><a href=""><img src="images/download buttons apple.png" alt="Download Apple Store"></a></li>
+    <li class="horizontal"><a href=""><img src="images/download buttons android.png" alt="Download Google Play Store"></a></li>
+    <li class="horizontal"><img src="images/app icon.png" alt="GUZ Board App Icon"></li>
+  </ul>
+</div>
+
+<!-- Pagelayout and AMount of ROws -->
+<div id="pagelayout">
+  <div class="row" style="background-color:#1D1D1D;">
+    <div class="col s12"></div>
+  </div>
+  <div class="row" style="background-color:white;">
+    <div class="col s12"></div>
+  </div>
+  <div class="row" style="background-color:#1D1D1D;">
+    <div class="col s12"></div>
+  </div>
+  <div class="row" style="background-color:white;">
+    <div class="col s12"></div>
+  </div>
+  <div class="row" style="background-color:#1D1D1D;">
+    <div class="col s12"></div>
+  </div>
+  <div class="row" style="background-color:white;">
+    <div class="col s12"></div>
+  </div>
+  <div class="row" style="background-color:#1D1D1D;">
+    <div class="col s12"></div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div id = "footer" class="row grey darken-3 z-depth-2">
+  <div class="col s12" style="">
+    <div class="col s3"> </div>
+    <div class="col s2" style="margin-top:50px;margin-bottom:50px;">
+      <ul>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="#">News</a></li>
+      </ul>
+    </div>
+    <div class="col s2" style="margin-top:50px;margin-bottom:50px;">
+      <ul>
+        <li><a href="index.html">Smartness</a></li>
+        <li><a href="http://www.carromco.com/">Carromco</a></li>
+        <li><a href="http://muudarts.com/">The Dart Factory</a></li>
+      </ul>
+    </div>
+    <div class="col s2" style="margin-top:50px;margin-bottom:50px;">
+      <ul>
+        <li><a href="imprint.html">Imprint</a></li>
+      </ul>
+    </div>
+    <div class="col s3"> </div>
+  </div>
+</div>
+
+<!-- END FOOTER --> 
+
+<script>
+
+// DETECT Language GLOBAL VAR
+var userLang = navigator.language || navigator.userLanguage;
+
+
+		$("#ger_lang").click(function(){
+			
+			userLang = "de";
+			$(window).scroll();
+		});
+		$("#eng_lang").click(function(){
+				
+			userLang = "en";
+			$(window).scroll();
+		});
+		
+		
+var seitenlaenge = 2;
+
+	
+
+	$(window).resize(function(){
+		
+		var mitte_y = ($(window).height() - $(".navbar-fixed").height()) / 2;
+		var mitte_x = ($(window).width() / 2);
+		
+		var oldPageHeight = $(document).height();
+		var scrollPos = $(document).scrollTop();
+		
+		$(".platzhalter").css({
+			"width": $(window).width()/2 - 200
+		});
+		
+		$("#bild").css({
+			//
+		});
+		
+		
+		$(".circleBase").css({
+			top: mitte_y - 10*($("#circle1").outerHeight()),
+			right: $(window).width()*0.02,
+		});
+		
+		$(".row").css({
+			"height":seitenlaenge*($(window).height() - $(".navbar-fixed").height())
+		});
+		
+		
+		$("#footer").css({
+			"height":($(window).height() - $(".navbar-fixed").height())*0.3,
+		});
+		
+		//var newPageHeight = $(document).height();
+		//$("html, body").animate({ scrollTop: scrollPos - (oldPageHeight - newPageHeight)  }, 0);
+		
+		
+		$("#textfield").css({
+			"position":"fixed",
+			right: mitte_x + mitte_x/10,
+			top: mitte_y - $(window).height()/8,
+			"max-width": mitte_x - mitte_x/8,
+			"padding-left": "20px"
+		});
+		
+		$("#description").css({
+				"padding-left":"20px"
+		});
+	});
+	
+	$(window).scroll(function(event){
+   		var st = $(this).scrollTop();
+		var pagelength = $(document).height() - ($(".navbar-fixed").height() + $("#footer").height());
+		var rowstatus = (Math.round( ( (pagelength - st) / $(".row").height() ) *100) /100 -0.5); // gibt zwei Dezimalzahlen aus, ab 7.00 herunterzählend.
+		var smallCircle = "0.4vw";
+		var bigCircle = "0.7vw";
+		
+			
+			if(rowstatus < 7 && rowstatus > 6){
+				$("#circle1").css({
+					"width": bigCircle,
+					"height": bigCircle
+				});
+				$("#circle2").css({
+					"width": smallCircle,
+					"height": smallCircle
+				});
+				var easebegin = rowstatus - 6;
+				$("#textfield").css({
+					"color":"white"
+				});
+				$("#title").text("Square-501");
+				if(userLang == "de"){
+					$("#description").text("Das Onlinefähige Dartboard. Weltweiter Spaß. In Echtzeit.");
+				} else{
+					$("#description").text("Online Connect Dartbard. Realtime. Global fun.");
+				}
+				$("#textfield").css({
+					"opacity": -3*((easebegin - 0.5)*(easebegin - 0.5))+1
+				});
+				$("#titlelogo").css({
+					"visibility":"visible",
+					"opacity": -3*((easebegin - 0.5)*(easebegin - 0.5))+1
+				});
+			}
+			if(rowstatus < 6 && rowstatus > 5){
+				$("#circle1").css({
+					"width": smallCircle,
+					"height": smallCircle
+				});
+				$("#circle2").css({
+					"width": bigCircle,
+					"height": bigCircle
+				});
+				$("#circle3").css({
+					"width": smallCircle,
+					"height": smallCircle
+				});
+				var easebegin = rowstatus - 5;
+				$("#textfield").css({
+					"color":"black"
+				});
+				$("#icons").css({
+					"visibility":"hidden"
+				});
+				$("#titlelogo").css({
+					"visibility":"collapse"
+				});
+				if(userLang == "de"){
+					$("#title").text("Die Innovation.");
+					$("#description").text("Smartness Square-501 ermöglicht als erstes elektronisches Dartboard Kopf-an-Kopf Duelle online. Trete in Echtzeit gegen deine Freunde an oder gegen Dartspieler aus der ganzen Welt.");
+				} else{
+					$("#title").text("The innovation.");
+					$("#description").text("Guz board is the first electronic dartboard that enables realtime head-to-head dart battles online with your friends or any dart players around the world.")
+				}
+				$("#textfield").css({
+					"opacity": -3*((easebegin - 0.5)*(easebegin - 0.5))+1
+				});
+			} 
+			if(rowstatus < 5 && rowstatus > 4){
+				$("#circle2").css({
+					"width": smallCircle,
+					"height": smallCircle
+				});
+				$("#circle3").css({
+					"width": bigCircle,
+					"height": bigCircle
+				});
+				$("#circle4").css({
+					"width": smallCircle,
+					"height": smallCircle
+				});
+				var easebegin = rowstatus - 4;
+				$("#textfield").css({
+					"color":"white"
+				});
+				if(userLang == "de"){
+					$("#title").text("APP-Solut.");
+					$("#description").text("Einfach die -GUZ Board- App auf dem Smartphone oder Tablet herunterladen und los gehts! Fordere Dartspieler zum Online-Duell heraus und verwandle Dein zu Hause in eine Dart-Arena!");
+				} else{
+					$("#title").text("App-solution.");
+					$("#description").text("Simply download the 'GUZ Board' App and start playing! Challenge dart players online and turn your home into a darts arena!");
+				}
+				$("#textfield").css({
+					"opacity": -3*((easebegin - 0.5)*(easebegin - 0.5))+1
+				});
+				$("#icons").css({
+					"opacity":-3*((easebegin - 0.5)*(easebegin - 0.5))+1,
+					"visibility":"visible"	
+				});
+				
+			}
+			if(rowstatus < 4 && rowstatus > 3){
+				$("#circle3").css({
+					"width": smallCircle,
+					"height": smallCircle
+				});
+				$("#circle4").css({
+					"width": bigCircle,
+					"height": bigCircle
+				});
+				$("#circle5").css({
+					"width": smallCircle,
+					"height": smallCircle
+				});
+				var easebegin = rowstatus - 3;
+				$("#textfield").css({
+					"color":"black",
+				});
+				if(userLang == "de"){
+					$("#title").text("Einfach und Intuitiv.");
+					$("#description").text("Spieleinstellungen werden schnell und intuitiv auf dem Touchscreen des Smartphones oder Tablets getätigt.");
+				} else{
+					$("#title").text("Fun and Intuitive.");
+					$("#description").text("Quick and easy game set up on the touch-screen of your smartphone or tablet.");
+				}
+				$("#icons").css({
+					"visibility":"hidden"
+				});
+				
+				$("#textfield").css({
+					"opacity": -3*((easebegin - 0.5)*(easebegin - 0.5))+1
+				});
+			}
+			if(rowstatus < 3 && rowstatus > 2){
+				$("#circle4").css({
+					"width": smallCircle,
+					"height": smallCircle
+				});
+				$("#circle5").css({
+					"width": bigCircle,
+					"height": bigCircle
+				});
+				$("#circle6").css({
+					"width": smallCircle,
+					"height": smallCircle
+				});
+				var easebegin = rowstatus - 2;
+				$("#textfield").css({
+					"color":"white"
+				});
+				if(userLang == "de"){
+					$("#title").text("Entertainment pur.");
+					$("#description").text("LEDs auf und um das Dartboard herum können individuell gesteuert werden und verwandeln dein zu Hause in eine funkelnde Dart-Arena. VErbinde dein Smartphone oder Tablet mit einem Smart TV und Bluetooth Lautsprechern für das absolute Spielerlebnis!");
+				} else{
+					$("#title").text("Lights Up!");
+					$("#description").text("Individually controllable LEDs on and around the Board turn your home onto a flashy dart arena. Boost your play by connecting to smart TV and Bluetooth Speakers for the ultimate experience!");
+				}
+				$("#textfield").css({
+					"opacity": -3*((easebegin - 0.5)*(easebegin - 0.5))+1
+				});
+			}
+			if(rowstatus < 2 && rowstatus > 1){
+				$("#circle5").css({
+					"width": smallCircle,
+					"height": smallCircle
+				});
+				$("#circle6").css({
+					"width": bigCircle,
+					"height": bigCircle
+				});
+				$("#circle7").css({
+					"width": smallCircle,
+					"height": smallCircle
+				});
+				var easebegin = rowstatus - 1;
+				$("#textfield").css({
+					"color":"black"
+				});
+				if(userLang == "de"){
+					$("#title").text("Individualisierbar.");
+					$("#description").text("Das magnetische Cover lässt sich einfach abnehmen und durch andere Farben ersetzen. Neben Schwarz und blau sind bald noch andere Farben erhältlich!");
+				} else{
+					$("#title").text("Customizable.");
+					$("#description").text("Customize the dartboard as you like. The dartboard becomes a design-special itself! More colors and features coming soon!");
+				}
+				$("#textfield").css({
+					"opacity": -3*((easebegin - 0.5)*(easebegin - 0.5))+1
+				});
+			}
+			if(rowstatus < 1 && rowstatus > 0){
+				$("#circle6").css({
+					"width": smallCircle,
+					"height": smallCircle
+				});
+				$("#circle7").css({
+					"width": bigCircle,
+					"height": bigCircle
+				});
+				var easebegin = rowstatus - 0;
+				$("#textfield").css({
+					"color":"white"
+				});
+				if(userLang == "de"){
+					$("#title").text("Die Zukunft.");
+					$("#description").text("Enjoy anytime, anywhere, with anyone! GAME START!");
+				} else{
+					$("#title").text("The Future.");
+					$("#description").text("Enjoy anytime, anywhere, with anyone! GAME START!");
+				}
+				$("#textfield").css({
+					"opacity": -1*((easebegin - 0.2)*(easebegin - 0.2))+1
+				});
+			}
+	});
+	
+	$(document).ready(function(){
+		
+		if(userLang == "de"){
+			$("#description").text("Das Onlinefähige Dartboard. Weltweiter Spaß. In Echtzeit.");
+		} else{
+			$("#description").text("Online Connect Dartbard. Realtime. Global fun.");
+		}
+		
+		$(".platzhalter").css({
+			"width": $(window).width()/2 - 200
+		});
+
+		$(".dropdown-button").dropdown();
+		// To initially run the function:
+		$(window).resize();	
+		
+/*			
+			function imageCache(base, firstNum, lastNum) {
+			this.cache = [];
+			var img;
+			for (var i = firstNum; i <= lastNum; i++) {
+				img = new Image();
+				img.src = base + i + ".png";
+				this.cache.push(img.src);
+			}
+		 }
+		 
+		myCache = new imageCache("images/test/test",0,201);	
+		
+	 
+		
+		var frame = 0;
+		var lastScrollTop = 0;
+		document.addEventListener("scroll", funktion);
+		function funktion(){
+			
+			var pagelength = $(document).height() - $(window).height(); //5600
+			var st = $(this).scrollTop(); //count up
+			
+			var speed = Math.round((st / pagelength) * 200);
+			frame = speed;
+
+			document.getElementById("bild").src = myCache.cache[frame];
+			lastScrollTop = st;
+			
+		}
+		
+		*/
+	
+		// MY SCROLL SPRITE ANIMATION
+		
+		//<!-- SPrite ANimation -->
+
+		var row = 0;
+		var col = 0;
+		var lastScrollTop = 0;
+		var counter = row * col;
+		var resetcounter = 0;
+		var row_max = $("#bild").height() / $("#container").height(); //20
+		var col_max = $("#bild").width() / $("#container").width(); //10
+		var numImgs = row_max * col_max;
+		
+		
+		document.addEventListener("scroll", funktion);
+		 function funktion(){
+			var pagelength = $(document).height() - $(window).height(); //5600
+			
+			var st = $(this).scrollTop(); //count up		
+			var imgHeight = $("#container").height();
+			var imgWidth = $("#container").width();
+
+			if(st > lastScrollTop){
+				DownScroll(); 
+			} else {
+				UpScroll();
+			}
+			lastScrollTop = st;
+			
+			function DownScroll(){
+				var speed = Math.round((st / pagelength) * numImgs) - counter;
+				
+				if(speed < 0){
+					speed = 0;	
+				}
+				
+				row = speed;
+				
+				
+				
+				if(st < (pagelength - $("#footer").height())){
+	
+				$("#bild").css({
+    				"margin-top": -1 * (row * imgHeight),
+					"margin-left": -1 * (col * imgWidth)
+ 				});
+				row++;
+				}
+				
+				if(row >= row_max){
+					row = row_max;
+					if(col < col_max){
+						col++;
+					}
+					counter = row * col;
+					row = 0;	
+				}
+				
+				
+			}
+			
+			function UpScroll(){
+				if(col == 0 && st > 5000){
+					col = col_max;
+				}
+				
+				var speed = Math.round((st / pagelength) * numImgs) - counter; <!-- Wert zwischen 0 und 20 -->
+					
+				
+				
+				if(speed == row_max){
+					speed = 19;	
+				}
+				
+				row = speed;
+				
+				$("#bild").css({
+    				"margin-top": -1 * (row * imgHeight),
+					"margin-left": -1 * (col * imgWidth)
+ 				});
+				row--;
+				
+				if(row == 19){
+				 //	
+				}
+
+				
+				if(row < 0){
+					col--;
+					row = row_max;	
+					counter = row * col;
+				}
+				
+				if(col <= 0){
+					row = 0;
+					col = 0;
+					counter = 0;
+				}
+				
+			}
+			
+			
+			
+			
+		}
+		
+	
+		$("#circle1").click(function(){	
+			 $("html, body").animate({ scrollTop: 0*($(window).height() - $(".navbar-fixed").height()) }, 1500);
+		});
+		$("#circle2").click(function(){	
+			 $("html, body").animate({ scrollTop: 1*($(window).height() - $(".navbar-fixed").height()) }, 1500);
+		});
+		$("#circle3").click(function(){	
+			 $("html, body").animate({ scrollTop: 2*($(window).height() - $(".navbar-fixed").height()) }, 1500);
+		});
+		$("#circle4").click(function(){	
+			 $("html, body").animate({ scrollTop: 3*($(window).height() - $(".navbar-fixed").height()) }, 1500);
+		});
+		$("#circle5").click(function(){	
+			 $("html, body").animate({ scrollTop: 4*($(window).height() - $(".navbar-fixed").height()) }, 1500);
+		});
+		$("#circle6").click(function(){	
+			 $("html, body").animate({ scrollTop: 5*($(window).height() - $(".navbar-fixed").height()) }, 1500);
+		});
+		$("#circle7").click(function(){	
+			 $("html, body").animate({ scrollTop: 6*($(window).height() - $(".navbar-fixed").height()) }, 1500);
+		});		
+	});
+	
+</script> 
+
+<!-- Place for Scripts above -->
+
+</body>
+</html>
